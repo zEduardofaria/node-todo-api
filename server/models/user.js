@@ -59,7 +59,7 @@ UserSchema.methods.removeToken = function (token) {
     $pull: {
       tokens: { token }
     }
-  })
+  });
 };
 
 UserSchema.statics.findByToken = function (token) {
